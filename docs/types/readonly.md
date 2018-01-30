@@ -53,7 +53,7 @@ type Foo = {
 type ReadonlyFoo = Readonly<Foo>; 
 
 let foo:Foo = {bar: 123, bas: 456};
-let fooReadonly:FooReadonly = {bar: 123, bas: 456};
+let fooReadonly:ReadonlyFoo = {bar: 123, bas: 456};
 
 foo.bar = 456; // Okay
 fooReadonly.bar = 456; // ERROR: bar is readonly
